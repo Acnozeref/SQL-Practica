@@ -28,3 +28,19 @@ WHERE edad <= 26;
 SELECT *
 FROM empleados
 WHERE puesto <> 'Desarrollador';
+
+-- Empleados mayores a 25 Y salario menor a 25 mil.
+SELECT *
+FROM empleados
+WHERE edad > 25 AND salario < 25000;
+
+-- Empleados menores a 25 O salario mayor a 25 mil.
+SELECT *
+FROM empleados
+WHERE edad < 25 OR salario > 25000;
+
+-- Combinacion de Operadores Logicos.
+SELECT *
+FROM empleados
+WHERE edad > 25
+AND (puesto = 'Analista' OR puesto = 'Desarrollador');
