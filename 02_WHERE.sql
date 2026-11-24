@@ -44,3 +44,10 @@ SELECT *
 FROM empleados
 WHERE edad > 25
 AND (puesto = 'Analista' OR puesto = 'Desarrollador');
+
+-- Permite comprobar si un valor coincide con cualquiera de varios valores,
+-- evitando escribir múltiples condiciones OR
+
+SELECT *
+FROM empleados
+WHERE puesto IN ('Analista', 'Desarrollador');
